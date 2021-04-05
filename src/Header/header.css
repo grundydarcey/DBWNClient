@@ -1,14 +1,18 @@
 .headernav {
   background-color: #e32a19;
-  padding: 125px 0px;
-  background-size: cover;
-  background-image: url('../Images/beach.jpg');
+  height: 460px;
+  padding-top: 10px;
+  background-size: 100% 220%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url('../Images/guard.jpg');
 }
 
 .headernav h1 {
   color: #fff;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 55px;
   text-shadow: 3px 3px #47362d;
   font-family: Georgia;
+  padding-top: 280px;
 }
