@@ -4,7 +4,11 @@ import './header.css';
 export default function Header() {
   return (
     <nav className='headernav'>
-      <p>Daytona Beach, What Now?</p>
+      <h1>Daytona Beach, What Now?
+
+
+          
+      </h1>
     </nav>
   )
 }

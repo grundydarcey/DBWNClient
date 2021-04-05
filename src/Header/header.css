@@ -1,5 +1,14 @@
 .headernav {
   background-color: #e32a19;
-  padding: 65px 0px;
-  margin-top: 0;
+  padding: 125px 0px;
+  background-size: cover;
+  background-image: url('../Images/beach.jpg');
+}
+
+.headernav h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 35px;
+  text-shadow: 3px 3px #47362d;
+  font-family: Georgia;
 }
