@@ -21,7 +21,7 @@ export default class App extends Component {
     fetch(`${config.API_ENDPOINT}/restaurants`, {
       method: 'GET',
       headers: {
-        'content-type': 'application/json'
+        'Content-Type': 'application/json'
       }
     })
     // .then(data => {
