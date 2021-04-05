@@ -24,24 +24,25 @@ export default class App extends Component {
         'Content-Type': 'application/json'
       }
     })
-    // .then(data => {
-    //   return data.json()
-    // })
-    // .then(res => {
-    //   this.setState({ restaurants: res })
-    // })
-    .then(res => res.text())
-    .then(text => console.log(text))
-    // .catch((error) => {
-    //   console.error({ error })
-    // })
+    .then(data => {
+      return data.json()
+    })
+    .then(res => {
+      this.setState({ restaurants: res })
+      console.log(res)
+    })
+    // .then(res => res.text())
+    // .then(text => console.log(text))
+    .catch((error) => {
+      console.error({ error })
+    })
   }
     
   render() {
     const value = {
       restaurants: this.state.restaurants,
     }
-    console.log(this.context.restaurants)
+    //console.log(this.context.restaurants)
     return (
       <ApiContext.Provider value={value}>
       <main className='App'>
