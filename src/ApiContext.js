@@ -2,7 +2,7 @@ import React from 'react';
 
 const ApiContext = React.createContext({
   restaurants: [],
-  nightclubs: [],
+  nightlife: [],
 })
 
-export default ApiContext;
+export default ApiContext;   

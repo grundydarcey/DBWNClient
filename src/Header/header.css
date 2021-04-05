@@ -14,5 +14,23 @@
   font-size: 55px;
   text-shadow: 3px 3px #47362d;
   font-family: Georgia;
-  padding-top: 280px;
+  padding-top: 250px;
 }
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav p {
+  flex-direction: row;
+  margin: 5px 10px;
+  text-decoration-style: none;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
