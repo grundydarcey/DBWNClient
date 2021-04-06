@@ -1,7 +1,6 @@
 import React from 'react';
 import './header.css';
-import Food from '../Images/food.jpg';
-import Drink from '../Images/drink.png';
+
 import { Link } from 'react-router-dom';
 
 export default function Header() {
