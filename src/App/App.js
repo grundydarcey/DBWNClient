@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import Restaurants from './Restaurant/restaurant';
-import allNightLife from './AllNightlife/allnightlife';
-import Header from './Header/header';
+import Restaurants from '../Restaurant/restaurant';
+import allNightLife from '../AllNightlife/allnightlife';
+import Header from '../Header/header';
 import './App.css';
-import config from './config';
-import ApiContext from './ApiContext';
-import Donate from './Donate/donate';
-import Landing from './Landing Page/landing';
+import config from '../config';
+import ApiContext from '../ApiContext';
+import Donate from '../Donate/donate';
+import Landing from '../Landing Page/landing';
 
 export default class App extends Component {
   constructor(props) {

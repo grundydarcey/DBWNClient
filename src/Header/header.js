@@ -1,5 +1,7 @@
 import React from 'react';
 import './header.css';
+import Food from '../Images/food.jpg';
+import Drink from '../Images/drink.png';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -11,7 +13,9 @@ export default function Header() {
         <p><Link to='/donate'>Donate</Link></p>
         <p><Link to='/'>Home</Link></p>
       </section>
-      <h1>Daytona Beach, What Now?</h1>
+      <section className='sitename'>
+        <h1>Daytona Beach, What Now?</h1>
+      </section>
     </nav>
   )
 }

@@ -1,11 +1,11 @@
 .headernav {
   background-color: #e32a19;
-  height: 460px;
-  padding-top: 10px;
-  background-size: 100% 220%;
-  background-position: bottom;
+  height: 300px;
+  padding-top: 0px;
+  background-size: 100% 350%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../Images/guard.jpg');
+  background-image: url('../Images/horizon.jpg');
 }
 
 .headernav h1 {
@@ -14,17 +14,21 @@
   font-size: 55px;
   text-shadow: 3px 3px #47362d;
   font-family: Georgia;
-  padding-top: 250px;
+  padding-top: 35px;
 }
+
 
 .nav {
   display: flex;
   justify-content: flex-end;
+  padding-top: -10px;
 }
 
 .nav p {
   flex-direction: row;
-  margin: 5px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -20px;
   text-decoration-style: none;
   font-weight: bold;
 }
@@ -33,4 +37,3 @@ a {
   text-decoration: none;
   color: #000;
 }
-

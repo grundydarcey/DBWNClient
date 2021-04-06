@@ -1,3 +1,39 @@
 .individual {
   list-style-type: none;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 20px;
+  margin: 50px 100px;
+  border-width: 2px;
+  text-align: left;
+  display: flex;
 }
+
+#icon {
+  height: 200px;
+  width: 300px;
+  margin-left: 75px;
+}
+
+.liholder {
+  margin-top: 15px;
+  margin-left: 40px;
+}
+
+.liholder a, .individualheader {
+  font-size: 20px;
+}
+
+.contacttext {
+  margin-bottom: 2px;
+}
+
+.liholder a, .individualheader, .contacttext {
+  text-decoration: underline;
+}
+
+.menulink {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
