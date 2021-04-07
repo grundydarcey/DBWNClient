@@ -1,39 +1,34 @@
 .headernav {
   background-color: #e32a19;
   height: 300px;
-  padding-top: 0px;
   background-size: 100% 350%;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('../Images/horizon.jpg');
 }
 
-.headernav h1 {
+.sitename h1 {
   color: #fff;
   font-weight: bold;
   font-size: 55px;
   text-shadow: 3px 3px #47362d;
   font-family: Georgia;
-  padding-top: 35px;
+  padding-top: 115px;
 }
-
 
 .nav {
   display: flex;
   justify-content: flex-end;
-  padding-top: -10px;
 }
 
 .nav p {
   flex-direction: row;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: -20px;
-  text-decoration-style: none;
+  margin: 0px 20px;
   font-weight: bold;
 }
 
 a {
+  padding-top: 1px;
   text-decoration: none;
   color: #000;
 }

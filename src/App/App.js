@@ -8,6 +8,8 @@ import config from '../config';
 import ApiContext from '../ApiContext';
 import Donate from '../Donate/donate';
 import Landing from '../Landing Page/landing';
+import DBMap from '../Map/map';
+import Tours from '../Tours/tours';
 
 export default class App extends Component {
   constructor(props) {
@@ -60,10 +62,11 @@ export default class App extends Component {
       <ApiContext.Provider value={value}>
         <main className='App'>
           <Header />
-          <p>Welcome to Daytona Beach</p>
           <Route exact path='/' component={Landing} />
           <Route exact path='/restaurants' component={Restaurants} />
           <Route exact path='/nightlife' component={allNightLife} />
+          <Route exacth path='/tours' component={Tours} />
+          <Route exact path='/map' component={DBMap} />
           <Route exact path='/donate' component={Donate} />
         </main>
       </ApiContext.Provider>
