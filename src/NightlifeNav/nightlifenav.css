@@ -1,0 +1,13 @@
+.nightlifenav {
+  background-color: #1f2041;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nightlifenav p {
+  flex-direction: row;
+}
+
+.nightlifesection, .nightlifesection a {
+  color: #fff;
+}

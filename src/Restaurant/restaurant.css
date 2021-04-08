@@ -1,24 +1,37 @@
+.restaurant {
+  margin-top: 70px;
+}
+
 .individual {
   list-style-type: none;
   border-style: solid;
-  border-color: #d3d3d3;
+  border-color: #a3c9a8;
   border-radius: 20px;
-  margin: 50px 100px;
+  margin: 50px 150px;
   border-width: 2px;
   text-align: left;
   display: flex;
-  box-shadow: 5px 5px #e6e5e5;
+  box-shadow: 5px 5px #84b59f;
+  background-color: white;
+}
+
+.locationholder {
+  margin-top: 50px;
 }
 
 #icon {
-  height: 180px;
-  width: 270px;
+  height: 165px;
+  width: 250px;
   margin: 15px 0 15px 75px;
 }
 
+.intro {
+  margin-left: 95px;
+  margin-right: 95px;
+}
+
 .liholder {
-  margin-left: 10px;
-  margin-top: 35px;
+  margin: 20px 10px 0 10px;
 }
 
 .liholder a, .individualheader {

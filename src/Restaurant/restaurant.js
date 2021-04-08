@@ -10,8 +10,8 @@ export default class Restaurant extends Component {
     const Restaurants = this.context.restaurants;
     return (
       <section className='restaurant'>
-        <p>Here are some restaurants</p>
-        <ul>
+        <p className='intro'>Nam blandit erat quis nisi tincidunt suscipit. Sed mollis elit eu pulvinar vestibulum. Aenean nec metus iaculis, scelerisque nisl in, pharetra lectus. Proin in iaculis eros, sed aliquet ligula. Donec vel risus a dolor tristique tempor. Cras gravida mattis nisi vel facilisis. Duis sit amet justo diam. Nunc ut convallis nibh.</p>
+        <ul className='locationholder'>
           {Restaurants.map(rest =>
             <li key={rest.rest_id} className='individual'>
               <img src={rest.rest_image} id='icon' alt='icon'></img>

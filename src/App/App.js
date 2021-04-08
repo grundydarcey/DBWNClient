@@ -10,6 +10,9 @@ import Donate from '../Donate/donate';
 import Landing from '../Landing Page/landing';
 import DBMap from '../Map/map';
 import Tours from '../Tours/tours';
+import Daytona from '../Daytona/daytona';
+import MainNightlife from '../MainNightlife/mainnightlife';
+import Seabreeze from '../SeabreezeNightlife/seabreeze';
 
 export default class App extends Component {
   constructor(props) {
@@ -32,9 +35,6 @@ export default class App extends Component {
       }
     }
     ])
-    // .then(data => data.json())
-    // .then(res => this.setState({ restaurants: res }))
-    // .catch(error => console.error({ error }))
     .then(([restRes, clubRes]) => {
       if (!restRes.ok && !clubRes.ok) return (restRes.json().then(() => Promise.reject()), clubRes.json().then(() => Promise.reject()));
       return Promise.all([restRes.json(), clubRes.json()])
@@ -68,6 +68,9 @@ export default class App extends Component {
           <Route exacth path='/tours' component={Tours} />
           <Route exact path='/map' component={DBMap} />
           <Route exact path='/donate' component={Donate} />
+          <Route exact path='/nightlife/onedaytona' component={Daytona} />
+          <Route exact path='/nightlife/mainst' component={MainNightlife} />
+          <Route exact path='/nightlife/seabreeze' component={Seabreeze} />
         </main>
       </ApiContext.Provider>
     );

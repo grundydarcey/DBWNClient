@@ -1,10 +1,10 @@
 .headernav {
-  background-color: #e32a19;
+/*  background-color: #e32a19;*/
   height: 300px;
-  background-size: 100% 350%;
+  background-size: 100% 320%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../Images/horizon.jpg');
+  background-image: url('../Images/horizon.jpg'); 
 }
 
 .sitename h1 {
