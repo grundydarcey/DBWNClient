@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
-import './mainnightlife.css';
+import './adult.css';
 import { Link } from 'react-router-dom';
 import ApiContext from '../ApiContext';
 
-export default class MainNightlife extends Component {
+export default class Adult extends Component {
   static contextType = ApiContext;
-  render() {
-    console.log(this.context.mainst)
+    render() {
+      console.log(this.context.adult)
     return (
-      <section className='mainnightlifeholder'>
+      <section className='adultholder'>
         <section className='nightlifenav'>
           <p className='nightlifesection'><Link to='/nightlife/seabreeze'>Seabreeze</Link></p>
           <p className='nightlifesection'> | </p>
           <p className='nightlifesection'><Link to='/nightlife/ormond'>Ormond</Link></p>
           <p className='nightlifesection'> | </p>
-          <p className='nightlifesection'><Link to='/nightlife'>All Nightlife</Link></p>
+          <p className='nightlifesection'><Link to='/nightlife/mainst'>Main St.</Link></p>
           <p className='nightlifesection'> | </p>
-          <p className='nightlifesection'><Link to='/nightlife/adult'>Adult</Link></p>
+          <p className='nightlifesection'><Link to='/nightlife'>All Nightlife</Link></p>
         </section>
-        <p className='nlintrotext'>Here are clubs on main street</p>
+        <section className='adult'>
+          <p className='nlintrotext'>Here are adult clubs</p>
+        </section>
       </section>
     )
   }

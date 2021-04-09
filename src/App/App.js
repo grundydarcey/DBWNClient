@@ -10,9 +10,10 @@ import Donate from '../Donate/donate';
 import Landing from '../Landing Page/landing';
 import DBMap from '../Map/map';
 import Tours from '../Tours/tours';
-import Daytona from '../Daytona/daytona';
+import Ormond from '../Ormond/ormond';
 import MainNightlife from '../MainNightlife/mainnightlife';
 import Seabreeze from '../SeabreezeNightlife/seabreeze';
+import Adult from '../AdultNightlife/adult';
 
 export default class App extends Component {
   constructor(props) {
@@ -20,6 +21,10 @@ export default class App extends Component {
     this.state = {
       restaurants: [],
       nightlife: [],
+      seabreeze: [],
+      mainst: [],
+      ormond: [],
+      adult: [],
     }
   }
 
@@ -28,35 +33,38 @@ export default class App extends Component {
   componentDidMount = () => {
     Promise.all([
       fetch(`${config.API_ENDPOINT}/restaurants`),
-      fetch(`${config.API_ENDPOINT}/nightlife`), {
+      fetch(`${config.API_ENDPOINT}/nightlife`), 
+      fetch(`${config.API_ENDPOINT}/nightlife/Seabreeze`),
+      fetch(`${config.API_ENDPOINT}/nightlife/Main`),
+      fetch(`${config.API_ENDPOINT}/nightlife/Ormond`), {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
       }
     }
     ])
-    .then(([restRes, clubRes]) => {
-      if (!restRes.ok && !clubRes.ok) return (restRes.json().then(() => Promise.reject()), clubRes.json().then(() => Promise.reject()));
-      return Promise.all([restRes.json(), clubRes.json()])
+    .then(([restRes, clubRes, seaRes, mainRes, ormondRes]) => {
+      if (!restRes.ok && !clubRes.ok && !seaRes.ok && !mainRes.ok && !ormondRes.ok) return (restRes.json().then(() => Promise.reject()), clubRes.json().then(() => Promise.reject()), seaRes.json().then(() => Promise.reject()), mainRes.json().then(() => Promise.reject()), ormondRes.json().then(() => Promise.reject()));
+      return Promise.all([restRes.json(), clubRes.json(), seaRes.json(), mainRes.json(), ormondRes.json()])
     })
-    .then(([restaurants, nightlife]) => {
-      this.setState({ restaurants, nightlife })
+    .then(([restaurants, nightlife, seabreeze, mainst, ormond]) => {
+      this.setState({ restaurants, nightlife, seabreeze, mainst, ormond })
     })
     .catch((error) => {
       console.error({ error })
     })
   }
 
-  handleRestaurant = restaurantInfo => {
-    this.setState({ restaurants: restaurantInfo })
-  }
-    
+ 
   render() {
-    console.log(this.context)
+    //console.log(this.context)
     const value = {
       restaurants: this.state.restaurants,
       nightlife: this.state.nightlife,
-      handleRestaurant: this.handleRestaurant,
+      seabreeze: this.state.seabreeze,
+      mainst: this.state.mainst,
+      ormond: this.state.ormond,
+      adult: this.state.adult,
     }
     return (
       <ApiContext.Provider value={value}>
@@ -68,9 +76,10 @@ export default class App extends Component {
           <Route exacth path='/tours' component={Tours} />
           <Route exact path='/map' component={DBMap} />
           <Route exact path='/donate' component={Donate} />
-          <Route exact path='/nightlife/onedaytona' component={Daytona} />
+          <Route exact path='/nightlife/ormond' component={Ormond} />
           <Route exact path='/nightlife/mainst' component={MainNightlife} />
           <Route exact path='/nightlife/seabreeze' component={Seabreeze} />
+          <Route exact path='/nightlife/adult' component={Adult} />
         </main>
       </ApiContext.Provider>
     );
