@@ -7,6 +7,7 @@ export default class Ormond extends Component {
   static contextType = ApiContext;
   render() {
     console.log(this.context.ormond)
+    const ormondSpots = this.context.ormond;
     return (
       <section className='ormondholder'>
         <section className='nightlifenav'>
@@ -18,8 +19,18 @@ export default class Ormond extends Component {
           <p className='nightlifesection'> | </p>
           <p className='nightlifesection'><Link to='/nightlife/adult'>Adult</Link></p>
         </section>
-        <p className='nlintrotext'>Here are clubs on daytona</p>
+        <p className='nlintrotext'>Here are clubs in ormond area</p>
+        {ormondSpots.map(ormond =>
+          <li key={ormond.club_id} className='individual'>
+            <img src={ormond.club_image} id='icon' alt='icon'></img>
+            <section className='liholder'>
+              <p className='individualheader'>{ormond.club_name}</p>
+              <p className='contacttext'>Contact<br />
+              Addcress: {ormond.address_building_number} {ormond.address_street} {ormond.city}, {ormond.club_state} {ormond.address_zipcode}</p>
+            </section>
+          </li>)}
       </section>
+
     )
   }
 }

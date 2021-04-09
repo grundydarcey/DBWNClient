@@ -7,6 +7,7 @@ export default class Adult extends Component {
   static contextType = ApiContext;
     render() {
       console.log(this.context.adult)
+      const AdultInfo = this.context.adult
     return (
       <section className='adultholder'>
         <section className='nightlifenav'>
@@ -20,6 +21,15 @@ export default class Adult extends Component {
         </section>
         <section className='adult'>
           <p className='nlintrotext'>Here are adult clubs</p>
+          {AdultInfo.map(adult =>
+            <li key={adult.club_id} className='individual'>
+              <img src={adult.club_image} id='icon' alt='icon'></img>
+              <section className='liholder'>
+                <p className='individualheader'>{adult.club_name}</p>
+                <p className='contacttext'>Contact<br />
+                Address: {adult.address_building_number} {adult.address_street} {adult.city}, {adult.club_state} {adult.address_zipcode}</p>
+              </section>
+            </li>)}
         </section>
       </section>
     )

@@ -36,19 +36,20 @@ export default class App extends Component {
       fetch(`${config.API_ENDPOINT}/nightlife`), 
       fetch(`${config.API_ENDPOINT}/nightlife/Seabreeze`),
       fetch(`${config.API_ENDPOINT}/nightlife/Main`),
-      fetch(`${config.API_ENDPOINT}/nightlife/Ormond`), {
+      fetch(`${config.API_ENDPOINT}/nightlife/Ormond`), 
+      fetch(`${config.API_ENDPOINT}/adult`), {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
       }
     }
     ])
-    .then(([restRes, clubRes, seaRes, mainRes, ormondRes]) => {
-      if (!restRes.ok && !clubRes.ok && !seaRes.ok && !mainRes.ok && !ormondRes.ok) return (restRes.json().then(() => Promise.reject()), clubRes.json().then(() => Promise.reject()), seaRes.json().then(() => Promise.reject()), mainRes.json().then(() => Promise.reject()), ormondRes.json().then(() => Promise.reject()));
-      return Promise.all([restRes.json(), clubRes.json(), seaRes.json(), mainRes.json(), ormondRes.json()])
+    .then(([restRes, clubRes, seaRes, mainRes, ormondRes, adultRes]) => {
+      if (!restRes.ok && !clubRes.ok && !seaRes.ok && !mainRes.ok && !ormondRes.ok && !adultRes.ok) return (restRes.json().then(() => Promise.reject()), clubRes.json().then(() => Promise.reject()), seaRes.json().then(() => Promise.reject()), mainRes.json().then(() => Promise.reject()), ormondRes.json().then(() => Promise.reject()), adultRes.json().then(() => Promise.reject()));
+      return Promise.all([restRes.json(), clubRes.json(), seaRes.json(), mainRes.json(), ormondRes.json(), adultRes.json()])
     })
-    .then(([restaurants, nightlife, seabreeze, mainst, ormond]) => {
-      this.setState({ restaurants, nightlife, seabreeze, mainst, ormond })
+    .then(([restaurants, nightlife, seabreeze, mainst, ormond, adult]) => {
+      this.setState({ restaurants, nightlife, seabreeze, mainst, ormond, adult })
     })
     .catch((error) => {
       console.error({ error })
