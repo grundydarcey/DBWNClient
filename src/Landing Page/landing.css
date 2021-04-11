@@ -1,5 +1,5 @@
 .landing {
-  margin: 70px 125px 50px 125px;
+  margin: 70px 175px 50px 175px;
   font-family: bahnschrift;
 }
 
@@ -9,14 +9,67 @@
 
 .toptext {
   margin-top: 300px;
+
 }
 
-.uber {
+#stevepicture {
+  height: 100px;
+  width: 100px;
+}
+
+.uber, .sincerelyflex  {
   display: flex; 
   align-items: center;
 }
 
+.sincerelyflex {
+  margin-top: 45px;
+}
+
 .ubertext {
   text-align: justify;
-  margin-right: 50px;
+  margin-right: 35px;
+}
+
+.sincerely {
+  margin-left: 35px;
+}
+
+#prius {
+  height: 115px;
+  width: 115px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
+
+
+.card {
+  display: inline-block;
+  text-align: left;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  height: 150px;
+  width: 400px;
+
+  border-radius: 25px;
+
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+  background-image: linear-gradient(to bottom right, #f8f3cc, #f5ecda);
+  color: #3e4e5c;
+}
+
+.uberrating {
+  margin-top: 100px;
+}
+
+#star {
+  height: 20px;
+  width: 20px;
 }
