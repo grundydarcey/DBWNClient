@@ -19,6 +19,7 @@ export default class MainNightlife extends Component {
           <p className='nightlifesection'> | </p>
           <p className='nightlifesection'><Link to='/nightlife/adult'>Adult</Link></p>
         </section>
+        <hr />
         <p className='nlintrotext'>Here are clubs on main street</p>
         {MainSt.map(main =>
           <li key={main.club_id} className='individual'>

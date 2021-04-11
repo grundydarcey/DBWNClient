@@ -19,6 +19,7 @@ export default class Adult extends Component {
           <p className='nightlifesection'> | </p>
           <p className='nightlifesection'><Link to='/nightlife'>All Nightlife</Link></p>
         </section>
+        <hr />
         <section className='adult'>
           <p className='nlintrotext'>Here are adult clubs</p>
           {AdultInfo.map(adult =>

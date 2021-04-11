@@ -1,3 +1,22 @@
 .landing {
-  margin: 70px 75px 50px 75px;
+  margin: 70px 125px 50px 125px;
+  font-family: bahnschrift;
+}
+
+.landing p {
+  text-align: justify;
+}
+
+.toptext {
+  margin-top: 300px;
+}
+
+.uber {
+  display: flex; 
+  align-items: center;
+}
+
+.ubertext {
+  text-align: justify;
+  margin-right: 50px;
 }

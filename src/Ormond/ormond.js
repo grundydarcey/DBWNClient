@@ -19,6 +19,7 @@ export default class Ormond extends Component {
           <p className='nightlifesection'> | </p>
           <p className='nightlifesection'><Link to='/nightlife/adult'>Adult</Link></p>
         </section>
+        <hr />
         <p className='nlintrotext'>Here are clubs in ormond area</p>
         {ormondSpots.map(ormond =>
           <li key={ormond.club_id} className='individual'>

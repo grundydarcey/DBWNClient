@@ -1,7 +1,8 @@
 .nightlifenav {
-  background-color: #1f2041;
+  background-color:#665744;
+  background-image: linear-gradient(to top right, #332006,  #665744,);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .nightlifenav p {

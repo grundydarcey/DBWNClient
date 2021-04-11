@@ -12,6 +12,7 @@ export default class AllNightlife extends Component {
     return (
       <section className='allnightlife'>
         <NightlifeNav />
+        <hr />
         <section className='nightlife'>
           <p>Here are some nightclubs</p>
           <ul className='locationholder'>

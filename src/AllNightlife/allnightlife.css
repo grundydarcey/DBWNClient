@@ -1,3 +1,13 @@
 .nightlife {
   margin-top: 70px;
 }
+
+.allnightlife {
+  margin-top: -20px;
+}
+
+.allnightlife hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}

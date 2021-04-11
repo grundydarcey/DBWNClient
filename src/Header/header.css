@@ -1,29 +1,40 @@
-.headernav {
-/*  background-color: #e32a19;*/
-  height: 300px;
-  background-size: 100% 320%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../Images/horizon.jpg'); 
+@font-face {
+  font-family: 'Velez';
+  src: url('../Fonts/wv-webfont.woff');
 }
 
 .sitename h1 {
   color: #fff;
   font-weight: bold;
   font-size: 55px;
-  text-shadow: 3px 3px #47362d;
-  font-family: Georgia;
-  padding-top: 115px;
+  font-family: Velez;
+}
+
+.sitename {
+  margin-top: -70px;
+  background-image: linear-gradient(to bottom right, #665744, #332006);
+}
+
+hr {
+  margin-top: -55px;
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
+  height: 270px;
+  background-size: 100% 280%;
+  background-position: 0px -215px;
+  background-repeat: no-repeat;
+  background-image: url('../Images/beachfront.jpg'); 
 }
 
 .nav p {
   flex-direction: row;
-  margin: 0px 20px;
+  margin: 0px 30px;
   font-weight: bold;
 }
 
@@ -31,4 +42,6 @@ a {
   padding-top: 1px;
   text-decoration: none;
   color: #000;
+  font-family: Velez;
+  font-size: 25px;
 }

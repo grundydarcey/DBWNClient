@@ -19,6 +19,7 @@ export default class Seabreeze extends Component {
           <p className='nightlifesection'> | </p>
           <p className='nightlifesection'><Link to='/nightlife/adult'>Adult</Link></p>
         </section>
+        <hr />
         <section className='seabreeze'>
           <p className='nlintrotext'>Here are clubs on seabreeze</p>
         </section>
