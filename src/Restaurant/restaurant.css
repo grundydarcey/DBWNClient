@@ -45,3 +45,14 @@
 .menulink {
   font-weight: bold;
 }
+
+@media all and (min-width: 0) and (max-width: 800px) {
+  .individual {
+    margin: 10px 30px;
+  }
+
+  #icon {
+    height: 119px;
+    width: 180px;
+  }
+}

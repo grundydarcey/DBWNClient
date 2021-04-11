@@ -45,3 +45,14 @@ a {
   font-family: Velez;
   font-size: 25px;
 }
+
+@media all and (min-width: 0px) and (max-width: 800px) {
+  .nav {
+    font-size: 10px;
+    background-size: 100% 180%;
+  }
+
+  .nav p {
+    margin: 0 5px;
+  }
+}
