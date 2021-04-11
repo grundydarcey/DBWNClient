@@ -19,7 +19,7 @@ export default class Restaurant extends Component {
                 <p className='individualheader'><a href={rest.link} target='_blank' rel='noreferrer' className='menulink'>{rest.rest_name}</a> | {rest.cuisine} </p>
                 <p className='contacttext'>Contact<br />
                 Address: {rest.address_building_number} {rest.address_street} {rest.city}, {rest.rest_state} {rest.address_zipcode}<br />
-                Phone Number: {rest.phone_number}</p>
+                Phone Number: <a href={rest.phone_link}>{rest.phone_number}</a></p>
               </section>
             </li>
             )}
