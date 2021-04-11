@@ -37,7 +37,7 @@ export default class Landing extends Component {
         
       </section>
       <section className='uberrating'>
-      <p>See what my other fares have said about me by scrolling to the left and right:</p>
+      <p className='uberratingtext'>See what my other fares have said about me by scrolling to the left and right:</p>
     <div className="scrolling-wrapper">
       <div className="card"><h2>Late Night Hero</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Man, I cannot thank you enough for that ride. Not many drivers would be so kind to do what you did."</p></div>
       <div className="card"><h2>All Star Driver</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>Thank you today has been a long day and you being genuine was amazing !"</p></div>

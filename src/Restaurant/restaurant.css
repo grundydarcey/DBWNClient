@@ -52,7 +52,8 @@
   }
 
   #icon {
-    height: 119px;
-    width: 180px;
+    height: 99px;
+    width: 150px;
+    margin: auto;
   }
 }

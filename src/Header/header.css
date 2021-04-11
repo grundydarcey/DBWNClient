@@ -50,6 +50,7 @@ a {
   .nav {
     font-size: 10px;
     background-size: 100% 180%;
+    background-position: 100px -315px;
   }
 
   .nav p {
