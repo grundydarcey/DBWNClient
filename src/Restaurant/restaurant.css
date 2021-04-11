@@ -48,12 +48,17 @@
 
 @media all and (min-width: 0) and (max-width: 800px) {
   .individual {
-    margin: 10px 30px;
+    margin: 5px 5px;
   }
 
   #icon {
     height: 99px;
     width: 150px;
     margin: auto;
+  }
+
+  .intro {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }
