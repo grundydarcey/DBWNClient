@@ -46,7 +46,7 @@ class DBMap extends Component {
   }
 
   render() {
-    const apiKey = `${process.env.REACT_APP_GOOGLE_KEY}`;
+    //const apiKey = `${process.env.REACT_APP_GOOGLE_KEY}`;
     return (
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
