@@ -6,7 +6,6 @@ export default class Restaurant extends Component {
   static contextType = ApiContext;
   
   render() {
-    console.log(this.context)
     const Restaurants = this.context.restaurants;
     return (
       <section className='restaurant'>

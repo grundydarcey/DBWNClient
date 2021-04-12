@@ -1,6 +1,20 @@
+@font-face {
+  font-family: 'Move';
+  src: url('../MainFont/UberMoveMedium.woff');
+}
+
 .landing {
   margin: 70px 175px 50px 175px;
-  font-family: bahnschrift;
+  font-family: Move;
+}
+
+.applanding {
+  font-family: Move;
+}
+
+#uberreview {
+  height: 80px;
+  width: 80px;
 }
 
 .landing p {
@@ -31,7 +45,7 @@
 }
 
 .sincerely {
-  margin-left: 35px;
+  margin-left: 25px;
 }
 
 #prius {
@@ -50,14 +64,19 @@
   text-align: left;
   margin: 10px 10px;
   padding: 10px 20px;
-  height: 150px;
-  width: 400px;
+  height: auto;
+  width: auto;
   border-radius: 25px;
   word-break: break-all;
   word-wrap: break-word;
-  white-space: normal;
-  background-image: linear-gradient(to bottom right, #f8f3cc, #f5ecda);
+  white-space: pre-line;
+  background-image: linear-gradient(to bottom right, #faac7e, #f5ecda);
   color: #3e4e5c;
+  
+}
+
+.card h2 {
+  margin-left: 10px;
 }
 
 .uberrating {

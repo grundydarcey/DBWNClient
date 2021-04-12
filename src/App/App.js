@@ -14,6 +14,7 @@ import Ormond from '../Ormond/ormond';
 import MainNightlife from '../MainNightlife/mainnightlife';
 import Seabreeze from '../SeabreezeNightlife/seabreeze';
 import Adult from '../AdultNightlife/adult';
+import Footer from '../Footer/footer';
 
 export default class App extends Component {
   constructor(props) {
@@ -81,6 +82,7 @@ export default class App extends Component {
           <Route exact path='/nightlife/mainst' component={MainNightlife} />
           <Route exact path='/nightlife/seabreeze' component={Seabreeze} />
           <Route exact path='/nightlife/adult' component={Adult} />
+          <Footer />
         </main>
       </ApiContext.Provider>
     );

@@ -32,19 +32,31 @@
 }
 
 .liholder {
-  margin: 20px 10px 0 40px;
+  margin: 20px 10px 0 30px;
 }
 
 .individualheader {
   font-size: 20px;
+  font-family: Velez;
 }
 
 .liholder a, .individualheader {
   text-decoration: underline;
+  font-size: 25px;
+  font-family: Velez;
 }
 
 .menulink {
   font-weight: bold;
+}
+
+.contacttext {
+  font-family: Move;
+  font-size: 17px;
+}
+
+.contacttext a {
+  font-size: 17px;
 }
 
 @media all and (min-width: 0) and (max-width: 800px) {

@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.css';
-
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -15,7 +14,6 @@ export default function Header() {
       </section>
       <section className='sitename'>
         <h1>Daytona Beach, What Now?</h1>
-        
       </section>
       <hr />
     </nav>
