@@ -33,7 +33,7 @@ hr {
 }
 
 .nav p {
-  flex-direction: row;
+  flex-direction: column;
   margin: 0px 30px;
   font-weight: bold;
 }
@@ -44,6 +44,29 @@ a {
   color: #000;
   font-family: Velez;
   font-size: 25px;
+}
+
+.hamburger {
+  margin: 20px 30px;
+}
+
+.menutext {
+  width: 40%;
+  top: 0;
+  right: 0;
+  background-color: #e0bc83;
+  position: fixed;
+  height: 100vh;
+}
+
+.mask {
+  background-color: rgb(200, 214, 205); 
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20vw;
+  height: 20vh;
+   opacity: 0.2; 
 }
 
 @media all and (min-width: 0px) and (max-width: 800px) {
