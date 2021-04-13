@@ -32,18 +32,20 @@ hr {
   background-image: url('../Images/beachfront.jpg'); 
 }
 
-.nav p {
-  flex-direction: column;
-  margin: 0px 30px;
-  font-weight: bold;
-}
-
-a {
+.linkentries {
   padding-top: 1px;
-  text-decoration: none;
   color: #000;
   font-family: Velez;
   font-size: 25px;
+  flex-direction: column;
+  margin: 50px 30px;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.linkentries a {
+  text-decoration: none;
+  color: #000;
 }
 
 .hamburger {
@@ -56,17 +58,26 @@ a {
   right: 0;
   background-color: #e0bc83;
   position: fixed;
-  height: 100vh;
+  height: 100%;
 }
 
 .mask {
-  background-color: rgb(200, 214, 205); 
+  background-color: rgb(0, 0, 0); 
   position: fixed;
   top: 0;
   right: 0;
-  width: 20vw;
-  height: 20vh;
-   opacity: 0.2; 
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.2; 
+}
+
+.exit {
+  text-align: left;
+  margin: 20px 0 20px 25px;
+}
+
+.exittrailing {
+  margin-top: 25px;
 }
 
 @media all and (min-width: 0px) and (max-width: 800px) {

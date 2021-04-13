@@ -3,6 +3,7 @@ import './header.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
 const [showMenu, setShowMenu] = useState(false);
@@ -12,17 +13,25 @@ let menuMask
 if(showMenu) {
   menu  = 
   <div className='menutext'>
-    <p><Link to='/'>Home</Link></p>
-    <p><Link to='/restaurants'>Restaurants</Link></p>
-    <p><Link to='/nightlife'>Nightlife</Link></p>
-    <p><Link to='/map'>Map</Link></p> 
-    <p><Link to='/donate'>Donate</Link></p>
+    <section className='exit'>
+    <FontAwesomeIcon
+      icon={faTimes}
+      onClick={() => setShowMenu(!showMenu)}
+    />
+    </section><br /><hr className='exittrailing' /> 
+    <p className='linkentries'><Link to='/'>Home</Link></p><br /><hr />
+    <p className='linkentries'><Link to='/restaurants'>Restaurants</Link></p><br /><hr />
+    <p className='linkentries'><Link to='/nightlife'>Nightlife</Link></p><br /><hr />
+    <p className='linkentries'><Link to='/map'>Map</Link></p><br /><hr />
+    <p className='linkentries'><Link to='/donate'>Donate</Link></p>
   </div>
 }
 
-menuMask = 
-<div className='mask'>
-</div>
+if (showMenu) {
+  menuMask = 
+    <div className='mask'>
+    </div>
+}
 
   return (
     <nav className='headernav'>
@@ -30,16 +39,14 @@ menuMask =
         <section className='hamburger'>
         <FontAwesomeIcon
           icon={faBars}
+          className='fontbars'
+          color='#fff'
+          size='2x'
           onClick={() => setShowMenu(!showMenu)}
         />
         </section>
         {menuMask}
         {menu}
-        <p><Link to='/'>Home</Link></p>
-        <p><Link to='/restaurants'>Restaurants</Link></p>
-        <p><Link to='/nightlife'>Nightlife</Link></p>
-        <p><Link to='/map'>Map</Link></p>
-        <p><Link to='/donate'>Donate</Link></p>
       </section>
       <section className='sitename'>
         <h1>Daytona Beach, What Now?</h1>
