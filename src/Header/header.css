@@ -36,7 +36,6 @@ hr {
   padding-top: 1px;
   color: #000;
   font-family: Velez;
-  font-size: 25px;
   flex-direction: column;
   margin: 50px 30px;
   font-weight: bold;
@@ -89,5 +88,18 @@ hr {
 
   .nav p {
     margin: 0 5px;
+  }
+
+  .linkentries {
+    font-size: 25px;
+  }
+
+  .menutext {
+    width: 70%;
+    top: 0;
+    right: 0;
+    background-color: #e0bc83;
+    position: fixed;
+    height: 100%;
   }
 }
