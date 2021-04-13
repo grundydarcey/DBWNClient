@@ -99,4 +99,8 @@ hr {
     position: fixed;
     height: 100%;
   }
+
+  .fontbaes {
+    size: 4x;
+  }
 }
