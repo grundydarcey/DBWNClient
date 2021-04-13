@@ -82,13 +82,13 @@ hr {
 @media all and (min-width: 0px) and (max-width: 800px) {
   .nav {
     font-size: 10px;
-    background-size: 100% 160%;
+    background-size: 100% 140%;
     background-position: 0px 0px;
   }
 
   .linkentries {
     font-size: 25px;
-    margin: 70px 30px;
+    margin: 100px 30px;
   }
 
   .menutext {
