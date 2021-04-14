@@ -7,8 +7,14 @@
 
 .nightlifenav p {
   flex-direction: row;
+  font-family: Velez;
+  font-size: 25px;
 }
 
 .nightlifesection, .nightlifesection a {
   color: #fff;
+}
+
+.nightlifenav a {
+  text-decoration: none;
 }

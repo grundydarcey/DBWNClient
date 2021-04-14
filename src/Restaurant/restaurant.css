@@ -29,10 +29,20 @@
 .intro {
   margin-left: 95px;
   margin-right: 95px;
+  text-align: justify;
 }
 
 .liholder {
   margin: 20px 10px 0 30px;
+}
+
+li:nth-child(odd) .liholder {
+  order: -1;
+}
+
+li:nth-child(even) .liholder {
+  order: 1;
+  text-align: right;
 }
 
 .individualheader {
@@ -44,6 +54,8 @@
   text-decoration: underline;
   font-size: 25px;
   font-family: Velez;
+  color: #000;
+
 }
 
 .menulink {
@@ -57,6 +69,7 @@
 
 .contacttext a {
   font-size: 17px;
+  color: #000;
 }
 
 @media all and (min-width: 0) and (max-width: 800px) {

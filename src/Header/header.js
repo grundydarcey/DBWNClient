@@ -17,6 +17,7 @@ if(showMenu) {
     <FontAwesomeIcon
       icon={faTimes}
       onClick={() => setShowMenu(!showMenu)}
+      size='3x'
     />
     </section><br /><hr className='exittrailing' /> 
     <p className='linkentries'><Link to='/'>Home</Link></p><br /><hr />

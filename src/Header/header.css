@@ -82,8 +82,8 @@ hr {
 @media all and (min-width: 0px) and (max-width: 800px) {
   .nav {
     font-size: 10px;
-    background-size: 100% 100%;
-    background-position: 0px 0px;
+    background-size: 100% 170%;
+    background-position: 0px -70px;
   }
 
   .linkentries {
@@ -98,9 +98,5 @@ hr {
     background-color: #e0bc83;
     position: fixed;
     height: 100%;
-  }
-
-  .fontbars {
-    font-size: 20px;
   }
 }

@@ -13,16 +13,17 @@
 }
 
 #uberreview {
+  margin: 15px 0 0 0;
   height: 80px;
   width: 80px;
 }
 
-.landing p {
+.landing p, .landing h2 {
   text-align: justify;
 }
 
 .toptext {
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 #stevepicture {
@@ -60,23 +61,27 @@
 }
 
 .card {
+  vertical-align: top;
   display: inline-block;
   text-align: left;
   margin: 10px 10px;
   padding: 10px 20px;
-  height: auto;
-  width: auto;
+  height: 250px;
+  width: 430px;
   border-radius: 25px;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre-line;
-  background-image: linear-gradient(to bottom right, #faac7e, #f5ecda);
-  color: #3e4e5c;
-  
+  background-image: linear-gradient(to bottom right, #743469, #29002eee);
+  color: #fff;
 }
 
 .card h2 {
-  margin-left: 10px;
+  margin-left: 0;
+}
+
+.card p {
+  white-space: break-spaces;
 }
 
 .uberrating {
