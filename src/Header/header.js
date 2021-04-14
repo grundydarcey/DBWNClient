@@ -20,10 +20,10 @@ if(showMenu) {
       size='3x'
     />
     </section><br /><hr className='exittrailing' /> 
-    <p className='linkentries'><Link to='/' onClick={() => setShowMenu(!showMenu)}>Home</Link></p><br /><hr />
-    <p className='linkentries'><Link to='/restaurants' onClick={() => setShowMenu(!showMenu)}>Restaurants</Link></p><br /><hr />
-    <p className='linkentries'><Link to='/nightlife' onClick={() => setShowMenu(!showMenu)}>Nightlife</Link></p><br /><hr />
-    <p className='linkentries'><Link to='/map' onClick={() => setShowMenu(!showMenu)}>Map</Link></p><br /><hr />
+    <p className='linkentries'><Link to='/' onClick={() => setShowMenu(!showMenu)}>Home</Link></p><br /><hr className='hrnav' />
+    <p className='linkentries'><Link to='/restaurants' onClick={() => setShowMenu(!showMenu)}>Restaurants</Link></p><br /><hr className='hrnav' />
+    <p className='linkentries'><Link to='/nightlife' onClick={() => setShowMenu(!showMenu)}>Nightlife</Link></p><br /><hr className='hrnav' />
+    <p className='linkentries'><Link to='/map' onClick={() => setShowMenu(!showMenu)}>Map</Link></p><br /><hr className='hrnav' />
     <p className='linkentries'><Link to='/donate' onClick={() => setShowMenu(!showMenu)}>Donate</Link></p>
   </div>
 }

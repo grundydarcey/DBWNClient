@@ -7,6 +7,7 @@ import Conversation from '../Images/GreatConversation.svg';
 import Service from '../Images/ExcellentService.svg';
 import Navigation from '../Images/ExpertNavigation.svg';
 import Hero from '../Images/LateNightHero.svg';
+import { Link } from 'react-router-dom';
 
 export default class Landing extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class Landing extends Component {
       <section className='applanding'>
         <section className='landing'>
           <h2>
-            Hello Traveller!<br />Welcome to Daytona Beach, Now What?
+            Hello traveler!<br />Welcome to Daytona Beach, What Now?
           </h2>
           <p className='toptext'>
             This is the question I hope to answer for you with this site.  On my vacations, I've found there are some things I can control and some things I cannot; I can choose my destination, I can choose where I stay, but more often than not, when I arrive I have no idea where to eat or what to do. One thing I know for sure, when I spend a small fortune to go on a vacation, the one thing that will make or break the vacation is the food. Looking back, every vacation I enjoyed can be traced back to the food.
@@ -26,7 +27,7 @@ export default class Landing extends Component {
             <img src={Prius} alt='prius' id='prius'></img>
           </section>
           <p>
-            We rely on tourism here and appreciate every dollar you spend with us, I want to make sure that if this is your first visit that it will not be your last. While I was already compiling a list of restaurants, I decided to provide a small list of nightlife spots, breweries, activities, tours and finally adult-only venues that we have to offer. If this list has helped ensure you enjoyed Daytona Beach, please consider making a small donation using the link above to help me maintain this site and update it as new options become available.<br /><br />
+            We rely on tourism here and appreciate every dollar you spend with us, I want to make sure that if this is your first visit that it will not be your last. While I was already compiling a list of restaurants, I decided to provide a small list of nightlife spots, breweries, activities, tours and finally adult-only venues that we have to offer. If this list has helped ensure you enjoyed Daytona Beach, please consider making a small donation <Link to='/donate'>here</Link> to help me maintain this site and update it as new options become available.<br /><br />
             But most of all, enjoy your time here.<br />
           </p>
           <section className='sincerelyflex'>

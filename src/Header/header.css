@@ -22,6 +22,12 @@ hr {
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
+.hrnav, .exittrailing {
+  height: 1px;
+  border: 0px;
+  color: #000;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -52,7 +58,7 @@ hr {
 }
 
 .menutext {
-  width: 40%;
+  width: 30%;
   top: 0;
   right: 0;
   background-color: #e0bc83;
@@ -67,7 +73,7 @@ hr {
   right: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 0.2; 
+  opacity: 0.6; 
 }
 
 .exit {

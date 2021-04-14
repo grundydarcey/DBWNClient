@@ -9,7 +9,7 @@ export default class Restaurant extends Component {
     const Restaurants = this.context.restaurants;
     return (
       <section className='restaurant'>
-        <p className='intro'>Ready for a good meal now that you made it to town? These restaurants listed below show off the best of the Daytona area from your favorite down-home American classics, to sushi, or seafood restaurants with the freshest fish that's just been caught. Clicking on the restaurant's name will quickly take you to their website to look over their menu and decide your dish. We also list their phone number so you can make a quick call and even set a reservation if you need to.<br />This is not an exhaustive list, there are plenty of other restaurants. The restaurants listed below come at the reccomendation of myself, long-time locals, and visitors.</p>
+        <p className='intro'>Ready for a good meal now that you made it to town? These restaurants listed below show off the best of the Daytona area from your favorite down-home American classics, to sushi, or seafood restaurants with the freshest fish that's just been caught. Clicking on the restaurant's name will quickly take you to their website to look over their menu and decide your dish. We also list their phone number so you can make a quick call and even set a reservation if you need to.<br />This is not an exhaustive list, there are plenty of other restaurants. The restaurants listed below come at the recommendation of myself, long-time locals, and visitors.</p>
         <ul className='locationholder'>
           {Restaurants.map(rest =>
             <li key={rest.rest_id} className='individual'>
