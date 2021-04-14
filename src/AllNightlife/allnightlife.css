@@ -18,3 +18,10 @@
   text-align: justify;
   margin: 70px 175px 50px 175px;
 }
+
+@media all and (min-width: 0px) and (max-width: 800px) {
+  .nightlifeabout {
+    text-align: justify;
+    margin: 70px 30px 50px 30px;
+  }
+}

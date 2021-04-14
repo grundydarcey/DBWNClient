@@ -101,4 +101,9 @@ ul {
   .liholder {
     margin: 15px 5px 10px 5px;
   }
+
+  .restaurant h1 {
+    margin-left: 60px;
+    font-size: 15px;
+  }
 }

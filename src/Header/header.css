@@ -89,7 +89,7 @@ hr {
 @media all and (min-width: 0px) and (max-width: 800px) {
   .nav {
     font-size: 10px;
-    background-size: 100% 170%;
+    background-size: 100% 150%;
     background-position: 0px -70px;
   }
 
@@ -105,5 +105,9 @@ hr {
     background-color: #e0bc83;
     position: fixed;
     height: 100%;
+  }
+
+  .sitename h1 {
+    font-size: 15px;
   }
 }
