@@ -14,9 +14,9 @@ export default class Landing extends Component {
     return (
       <section className='applanding'>
         <section className='landing'>
-          <h2>
+          <h1>
             Hello traveler!<br />Welcome to Daytona Beach, What Now?
-          </h2>
+          </h1>
           <p className='toptext'>
             This is the question I hope to answer for you with this site.  On my vacations, I've found there are some things I can control and some things I cannot; I can choose my destination, I can choose where I stay, but more often than not, when I arrive I have no idea where to eat or what to do. One thing I know for sure, when I spend a small fortune to go on a vacation, the one thing that will make or break the vacation is the food. Looking back, every vacation I enjoyed can be traced back to the food.
           </p>

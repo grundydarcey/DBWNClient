@@ -1,0 +1,20 @@
+.mapholder {
+  margin: 70px 175px;
+  text-align: center;
+  font-family: Move;
+}
+
+.mapdisplay {
+  text-align: center;
+  width: 675px;
+  margin: 70px auto 0px auto;
+}
+
+.key {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.mapexplanation {
+  text-align: justify;
+}

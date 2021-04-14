@@ -19,6 +19,9 @@ export default class MainNightlife extends Component {
           <p className='nightlifesection'><Link to='/nightlife/adult'>Adult</Link></p>
         </section>
         <hr />
+        <h1 className='nlintrotext'>
+          Nightlife on Main Street
+        </h1>
         <p className='nlintrotext'>Main Street holds many Daytona Beach classics. Bikers come from all over the country to spend time in these bars and be around their people. These bars are a perfect spot to put your kickstand down and have a great time.</p>
         {MainSt.map(main =>
           <li key={main.club_id} className='individual'>

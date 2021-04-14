@@ -1,5 +1,6 @@
 .restaurant {
   margin-top: 70px;
+  font-family: Move;
 }
 
 .individual {
@@ -30,6 +31,11 @@
   margin-left: 95px;
   margin-right: 95px;
   text-align: justify;
+}
+
+.restaurant h1 {
+  text-align: justify;
+  margin-left: 95px;
 }
 
 .liholder {
@@ -64,6 +70,10 @@ li:nth-child(even) .liholder {
 .contacttext {
   font-family: Move;
   font-size: 17px;
+}
+
+ul {
+  margin-bottom: 150px;
 }
 
 .contacttext a {

@@ -20,6 +20,9 @@ export default class Adult extends Component {
         </section>
         <hr />
         <section className='adult'>
+          <h1 className='nlintrotext'>
+            Adult Nightlife
+          </h1>
           <p className='nlintrotext'>If your night skews a bit off-kilter, these are some establishments around that may pique your interest. From gentlemen's clubs to a 24-hour adult shop, there are a few different recommendations below to make sure you really see all of Daytona.</p>
           {AdultInfo.map(adult =>
             <li key={adult.club_id} className='individual'>

@@ -8,13 +8,13 @@ import config from '../config';
 import ApiContext from '../ApiContext';
 import Donate from '../Donate/donate';
 import Landing from '../Landing Page/landing';
-import DBMap from '../Map/map';
 import Tours from '../Tours/tours';
 import Ormond from '../Ormond/ormond';
 import MainNightlife from '../MainNightlife/mainnightlife';
 import Seabreeze from '../SeabreezeNightlife/seabreeze';
 import Adult from '../AdultNightlife/adult';
 import Footer from '../Footer/footer';
+import MapHolder from '../MapHolder/mapholder';
 
 export default class App extends Component {
   constructor(props) {
@@ -75,7 +75,7 @@ export default class App extends Component {
           <Route exact path='/restaurants' component={Restaurants} />
           <Route exact path='/nightlife' component={allNightLife} />
           <Route exacth path='/tours' component={Tours} />
-          <Route exact path='/map' component={DBMap} />
+          <Route exact path='/map' component={MapHolder} />
           <Route exact path='/donate' component={Donate} />
           <Route exact path='/nightlife/ormond' component={Ormond} />
           <Route exact path='/nightlife/mainst' component={MainNightlife} />

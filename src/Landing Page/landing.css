@@ -18,7 +18,11 @@
   width: 80px;
 }
 
-.landing p, .landing h2 {
+h1 {
+  font-size: 35px;
+}
+
+.landing p, .landing h1 {
   text-align: justify;
 }
 

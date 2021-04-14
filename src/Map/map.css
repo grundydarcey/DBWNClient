@@ -1,3 +1,8 @@
 .map {
   text-align: center;
 }
+
+.maplink {
+  size: 15px;
+  font-weight: bold;
+}

@@ -1,0 +1,52 @@
+.donations {
+  margin: 140px 175px 150px 175px;
+  font-family: Move;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: justify;
+}
+
+.donationp {
+  text-align: justify;
+}
+
+.donations p {
+  margin-top: 40px;
+}
+
+.paypallink {
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: rgb(160, 160, 160);
+  width: 400px;
+  text-align: center;
+  margin: 150px auto;
+  box-shadow: 5px 5px 5px rgb(160, 160, 160);
+}
+
+.paypalp {
+  color: rgb(99, 99, 99);
+  margin: -20px auto 0px 30px;
+  text-align: left;
+}
+
+.paypallink h2 {
+  margin: 30px auto -32px 30px;
+  text-align: left;
+}
+
+.paypalimg {
+  margin: -27px auto auto auto;
+  height: 50px;
+  width: 210px;
+}
+
+.sendpaypal {
+  text-align: center;
+  color: rgb(9, 7, 114);
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
