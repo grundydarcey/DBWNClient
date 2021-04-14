@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 export default class Seabreeze extends Component {
   static contextType = ApiContext;
   render() {
-    console.log(this.context.seabreeze)
     const Seabreeze = this.context.seabreeze;
     return (
       <section className='seabreezeholder'>
@@ -21,7 +20,7 @@ export default class Seabreeze extends Component {
         </section>
         <hr />
         <section className='seabreeze'>
-          <p className='nlintrotext'>Here are clubs on seabreeze</p>
+          <p className='nlintrotext'>The Seabreeze area has many nightlife venues to boast. And you don't even have to be 21 to get into all of them! If you havent't celebrated your 21st yet, you can still head out and have a great time at Razzles or Club 509. This area also has a fun axe-throwing bar (Axe and Grog) as well as a car-themed brewery (Daytona Tap Room), and a classic Irish bar (Robbie O'Connell's). The possibilites are really endless on this strip.</p>
         </section>
         {Seabreeze.map(sea =>
           <li key={sea.club_id} className='individual'>

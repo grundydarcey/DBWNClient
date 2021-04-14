@@ -59,7 +59,6 @@ export default class App extends Component {
 
  
   render() {
-    //console.log(this.context)
     const value = {
       restaurants: this.state.restaurants,
       nightlife: this.state.nightlife,

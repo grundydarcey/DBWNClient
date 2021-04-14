@@ -6,7 +6,6 @@ import ApiContext from '../ApiContext';
 export default class Ormond extends Component {
   static contextType = ApiContext;
   render() {
-    console.log(this.context.ormond)
     const ormondSpots = this.context.ormond;
     return (
       <section className='ormondholder'>
@@ -20,7 +19,7 @@ export default class Ormond extends Component {
           <p className='nightlifesection'><Link to='/nightlife/adult'>Adult</Link></p>
         </section>
         <hr />
-        <p className='nlintrotext'>Here are clubs in ormond area</p>
+        <p className='nlintrotext'>While Ormond may be just a little bit out of the way on your Daytona Beach excursion, I think it's worth the trip. As well as a more upscale vibe in this area, you'll also find many restaurants from our guide in this area as well just a stones-throw away. </p>
         {ormondSpots.map(ormond =>
           <li key={ormond.club_id} className='individual'>
             <img src={ormond.club_image} id='icon' alt='icon'></img>

@@ -6,7 +6,6 @@ import ApiContext from '../ApiContext';
 export default class MainNightlife extends Component {
   static contextType = ApiContext;
   render() {
-    console.log(this.context.mainst)
     const MainSt = this.context.mainst
     return (
       <section className='mainnightlifeholder'>
@@ -20,7 +19,7 @@ export default class MainNightlife extends Component {
           <p className='nightlifesection'><Link to='/nightlife/adult'>Adult</Link></p>
         </section>
         <hr />
-        <p className='nlintrotext'>Here are clubs on main street</p>
+        <p className='nlintrotext'>Main Street holds many Daytona Beach classics. Bikers come from all over the country to spend time in these bars and be around their people. These bars are a perfect spot to put your kickstand down and have a great time.</p>
         {MainSt.map(main =>
           <li key={main.club_id} className='individual'>
             <img src={main.club_image} id='icon' alt='icon'></img>

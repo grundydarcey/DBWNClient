@@ -46,11 +46,11 @@ class DBMap extends Component {
   }
 
   render() {
-    //const apiKey = `${process.env.REACT_APP_GOOGLE_KEY}`;
+    const apiKey = `${process.env.REACT_APP_GOOGLE_KEY}`;
     return (
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_KEY }}
+          bootstrapURLKeys={{ key: apiKey }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >

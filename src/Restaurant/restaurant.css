@@ -23,7 +23,7 @@
 #icon {
   height: 165px;
   width: 250px;
-  margin: 15px 0 15px 75px;
+  margin: 15px 30px 15px 30px;
 }
 
 .intro {
@@ -33,7 +33,7 @@
 }
 
 .liholder {
-  margin: 20px 10px 0 30px;
+  margin: 20px 30px 0 30px;
 }
 
 li:nth-child(odd) .liholder {
@@ -55,7 +55,6 @@ li:nth-child(even) .liholder {
   font-size: 25px;
   font-family: Velez;
   color: #000;
-
 }
 
 .menulink {
