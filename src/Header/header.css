@@ -67,6 +67,7 @@ hr {
   background-color: #e0bc83;
   position: fixed;
   height: 100vh;
+
 }
 
 .mask {
@@ -97,7 +98,7 @@ hr {
   }
 
   .menutext {
-    width: 30%;
+    width: 50%;
     top: 0;
     right: 0;
     background-color: #e0bc83;
