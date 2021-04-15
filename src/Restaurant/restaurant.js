@@ -20,10 +20,19 @@ export default class Restaurant extends Component {
             <li key={rest.rest_id} className='individual'>
               <img src={rest.rest_image} id='icon' alt='icon'></img>
               <section className='liholder'>
-                <p className='individualheader'><a href={rest.link} target='_blank' rel='noreferrer' className='menulink'>{rest.rest_name}</a> | {rest.cuisine} </p>
-                <p className='contacttext'>Contact<br />
-                Address: {rest.address_building_number} {rest.address_street} {rest.city}, {rest.rest_state} {rest.address_zipcode}<br />
-                Phone Number: <a href={rest.phone_link}>{rest.phone_number}</a></p>
+                <p className='individualheader'>
+                  <a href={rest.link} target='_blank' rel='noreferrer' className='menulink'>
+                    {rest.rest_name}
+                  </a> | {rest.cuisine}
+                </p>
+                <p className='contacttext'>
+                  Contact<br />
+                  Address: {rest.address_building_number} {rest.address_street} {rest.city}, {rest.rest_state} {rest.address_zipcode}<br />
+                  Phone Number: 
+                  <a href={rest.phone_link}>
+                    {rest.phone_number}
+                  </a>
+                </p>
               </section>
             <hr className='mobilehr' />
             </li>

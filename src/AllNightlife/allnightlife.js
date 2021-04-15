@@ -8,7 +8,7 @@ export default class AllNightlife extends Component {
 
     render() {
       const Nightclub = this.context.nightlife;
-    return (
+     return (
       <section className='allnightlife'>
         <NightlifeNav />
         <hr />
@@ -16,7 +16,9 @@ export default class AllNightlife extends Component {
           <h1 className='nightlifeabout'>
             Nightlife in the Daytona Beach Area
           </h1>
-          <p className='nightlifeabout'>Daytona Beach draws all kinds of crowds at all times of years. If you love the biker culture, I think you'll find a spot that's just right for you on Main Street. Seabreeze tends to draw a younger crowd with two 18-and-up danceclubs. For a more upscale type of venue, feel free to check out what the Ormond tab provides. If you'd like to browse some of these different categores, make sure to use our guide up above that will display the specific venues that fall into each of those categories. We also have information about some adult establishments as well if your night is taking a different kind of turn (I don't judge).</p>
+          <p className='nightlifeabout'>
+            Daytona Beach draws all kinds of crowds at all times of years. If you love the biker culture, I think you'll find a spot that's just right for you on Main Street. Seabreeze tends to draw a younger crowd with two 18-and-up danceclubs. For a more upscale type of venue, feel free to check out what the Ormond tab provides. If you'd like to browse some of these different categores, make sure to use our guide up above that will display the specific venues that fall into each of those categories. We also have information about some adult establishments as well if your night is taking a different kind of turn (I don't judge).
+          </p>
           <ul className='locationholder'>
             {Nightclub.map(clubs =>
               <li key={clubs.club_id} className='individual'>
@@ -24,9 +26,11 @@ export default class AllNightlife extends Component {
                 <section className='liholder'>
                   <p className='individualheader'>{clubs.club_name}</p>
                   <p className='contacttext'>Contact<br />
-                  Address: {clubs.address_building_number} {clubs.address_street} {clubs.city}, {clubs.club_state} {clubs.address_zipcode}</p>
+                    Address: {clubs.address_building_number} {clubs.address_street} {clubs.city}, {clubs.club_state} {clubs.address_zipcode}
+                  </p>
                 </section>
-            </li>)}
+              </li>
+            )}
           </ul>
         </section>
       </section>

@@ -15,6 +15,7 @@ import Seabreeze from '../SeabreezeNightlife/seabreeze';
 import Adult from '../AdultNightlife/adult';
 import Footer from '../Footer/footer';
 import MapHolder from '../MapHolder/mapholder';
+import NotFound from '../NotFound/notfound';
 
 export default class App extends Component {
   constructor(props) {
@@ -39,11 +40,11 @@ export default class App extends Component {
       fetch(`${config.API_ENDPOINT}/nightlife/Main`),
       fetch(`${config.API_ENDPOINT}/nightlife/Ormond`), 
       fetch(`${config.API_ENDPOINT}/adult`), {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
       }
-    }
     ])
     .then(([restRes, clubRes, seaRes, mainRes, ormondRes, adultRes]) => {
       if (!restRes.ok && !clubRes.ok && !seaRes.ok && !mainRes.ok && !ormondRes.ok && !adultRes.ok) return (restRes.json().then(() => Promise.reject()), clubRes.json().then(() => Promise.reject()), seaRes.json().then(() => Promise.reject()), mainRes.json().then(() => Promise.reject()), ormondRes.json().then(() => Promise.reject()), adultRes.json().then(() => Promise.reject()));
@@ -57,7 +58,6 @@ export default class App extends Component {
     })
   }
 
- 
   render() {
     const value = {
       restaurants: this.state.restaurants,
@@ -81,6 +81,7 @@ export default class App extends Component {
           <Route exact path='/nightlife/mainst' component={MainNightlife} />
           <Route exact path='/nightlife/seabreeze' component={Seabreeze} />
           <Route exact path='/nightlife/adult' component={Adult} />
+          <Route component={NotFound} />
           <Footer />
         </main>
       </ApiContext.Provider>

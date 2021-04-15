@@ -16,13 +16,25 @@ export default class Donate extends Component {
         </p>
         <section className='paymentlink'>
           <img src={Paypal} alt='paypal' className='paypalimg'></img>
-          <h2>Steven Gooch</h2>
-          <p className='paypalp'>@sgooch569</p>
-          <p className='sendpaypal'><a href='https://www.paypal.com/paypalme/sgooch569?locale.x=en_US' target='_blank' rel='noreferrer'>Send</a></p>
+          <h2>
+            Steven Gooch
+          </h2>
+          <p className='paypalp'>
+            @sgooch569
+          </p>
+          <p className='sendpaypal'>
+            <a href='https://www.paypal.com/paypalme/sgooch569?locale.x=en_US' target='_blank' rel='noreferrer'>
+              Send
+            </a>
+          </p>
         </section>
         <section className='venmocashapp'>
-          <a href='https://venmo.com/code?user_id=3236916656865280919' target='_blank' rel='noreferrer'><img src={Venmo} alt='venmo' className='venmo'></img></a><br />
-          <a href='https://cash.app/$StevenGooch7' target='_blank' rel='noreferrer'><img src={app} alt='cashapp' className='cashapp'></img></a>
+          <a href='https://venmo.com/code?user_id=3236916656865280919' target='_blank' rel='noreferrer'>
+            <img src={Venmo} alt='venmo' className='venmo'></img>
+          </a><br />
+          <a href='https://cash.app/$StevenGooch7' target='_blank' rel='noreferrer'>
+            <img src={app} alt='cashapp' className='cashapp'></img>
+          </a>
         </section>
       </section>
     )

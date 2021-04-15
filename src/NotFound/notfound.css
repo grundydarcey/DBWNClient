@@ -1,0 +1,15 @@
+.notfound {
+  margin: 140px 175px 95px 175px;
+  font-family: Move;
+}
+
+.notfound p {
+  text-align: justify;
+}
+
+#thinking {
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 300px;
+}

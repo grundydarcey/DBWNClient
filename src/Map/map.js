@@ -62,7 +62,9 @@ function Map() {
         }}
       >
         <div>
-          <a href={selectedVenue.link} className='maplink' target='_blank' rel='noreferrer'>{selectedVenue.rest_name}</a><br />
+          <a href={selectedVenue.link} className='maplink' target='_blank' rel='noreferrer'>
+            {selectedVenue.rest_name}
+          </a><br />
           {selectedVenue.club_name}<br />
           {selectedVenue.address_building_number} {selectedVenue.address_street} {selectedVenue.city}, {selectedVenue.rest_state} {selectedVenue.club_state} {selectedVenue.address_zipcode}
         </div>

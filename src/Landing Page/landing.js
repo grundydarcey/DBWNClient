@@ -32,7 +32,8 @@ export default class Landing extends Component {
           </p>
           <section className='sincerelyflex'>
             <img src={Steve} alt='stevepicture' id='stevepicture'></img>
-            <p className='sincerely'>Sincerely,<br />
+            <p className='sincerely'>
+              Sincerely,<br />
               Steve (your driver)
             </p>
           </section>
