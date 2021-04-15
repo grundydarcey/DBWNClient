@@ -115,4 +115,8 @@ h1 {
   .landing h1 {
     font-size: 18px;
   }
+
+  .toptext {
+    margin-top: 50px;
+  }
 }
