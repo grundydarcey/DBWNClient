@@ -15,7 +15,7 @@ import Seabreeze from '../SeabreezeNightlife/seabreeze';
 import Adult from '../AdultNightlife/adult';
 import Footer from '../Footer/footer';
 import MapHolder from '../MapHolder/mapholder';
-import NotFound from '../NotFound/notfound';
+//import NotFound from '../NotFound/notfound';
 
 export default class App extends Component {
   constructor(props) {
