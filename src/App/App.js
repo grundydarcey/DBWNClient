@@ -81,7 +81,7 @@ export default class App extends Component {
           <Route exact path='/nightlife/mainst' component={MainNightlife} />
           <Route exact path='/nightlife/seabreeze' component={Seabreeze} />
           <Route exact path='/nightlife/adult' component={Adult} />
-          <Route component={NotFound} />
+         {/*<Route component={NotFound} />*/}
           <Footer />
         </main>
       </ApiContext.Provider>
