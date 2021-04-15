@@ -13,18 +13,20 @@ let menuMask
 if(showMenu) {
   menu  = 
   <div className='menutext'>
-    <section className='exit'>
-    <FontAwesomeIcon
-      icon={faTimes}
-      onClick={() => setShowMenu(!showMenu)}
-      size='3x'
-    />
-    </section><br /><hr className='exittrailing' /> 
-    <p className='linkentries'><Link to='/' onClick={() => setShowMenu(!showMenu)}>Home</Link></p><br /><hr className='hrnav' />
-    <p className='linkentries'><Link to='/restaurants' onClick={() => setShowMenu(!showMenu)}>Restaurants</Link></p><br /><hr className='hrnav' />
-    <p className='linkentries'><Link to='/nightlife' onClick={() => setShowMenu(!showMenu)}>Nightlife</Link></p><br /><hr className='hrnav' />
-    <p className='linkentries'><Link to='/map' onClick={() => setShowMenu(!showMenu)}>Map</Link></p><br /><hr className='hrnav' />
-    <p className='linkentries'><Link to='/donate' onClick={() => setShowMenu(!showMenu)}>Donate</Link></p>
+    <section className='linkholder'>
+      <section className='exit'>
+      <FontAwesomeIcon
+        icon={faTimes}
+        onClick={() => setShowMenu(!showMenu)}
+        size='3x'
+      />
+      </section>
+      <p className='linkentries'><Link to='/' onClick={() => setShowMenu(!showMenu)}>Home</Link></p>
+      <p className='linkentries'><Link to='/restaurants' onClick={() => setShowMenu(!showMenu)}>Restaurants</Link></p>
+      <p className='linkentries'><Link to='/nightlife' onClick={() => setShowMenu(!showMenu)}>Nightlife</Link></p>
+      <p className='linkentries'><Link to='/map' onClick={() => setShowMenu(!showMenu)}>Map</Link></p>
+      <p className='linkentries'><Link to='/donate' onClick={() => setShowMenu(!showMenu)}>Donate</Link></p>
+    </section>
   </div>
 }
 

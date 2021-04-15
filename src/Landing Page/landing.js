@@ -38,22 +38,19 @@ export default class Landing extends Component {
           </section>
         </section>
         <section className='uberrating'>
-        <p className='uberratingtext'>
-          See what my other fares have said about me by scrolling to the left and right:
-        </p>
-        <br />
-        <div className="scrolling-wrapper">
-          <div className="card"><img src={Hero} alt='hero' id='uberreview'></img><h2>Late Night Hero</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Man, I cannot thank you enough for that ride. Not many drivers would be so kind to do what you did."</p></div>
-          <div className="card"><img src={Conversation} alt='conversation' id='uberreview'></img><h2>Great Conversation</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Awesome conversation, even made a special pit stop for us! Highly recommend!"</p></div>
-          <div className="card"><img src={Navigation} alt='navigation' id='uberreview'></img><h2>Expert Navigation</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Good guy fun to chat with"</p></div>
-          <div className="card"><img src={Conversation} alt='conversation' id='uberreview'></img><h2>Great Conversation</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Thank you so much!"</p></div>
-          <div className="card"><img src={Service} alt='service' id='uberreview'></img><h2>Excellent Service</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Left our cellphone in his car and he promptly returned to us... awesome"</p></div>
-          <div className="card"><h2>All Star Driver</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>Thank you today has been a long day and you being genuine was amazing !"</p></div>
-        </div>
-        <br />
-        <br />
+          <p className='uberratingtext'>
+            See what my other fares have said about me by scrolling to the left and right:
+          </p><br />
+          <div className="scrolling-wrapper">
+            <div className="card"><img src={Hero} alt='hero' id='uberreview'></img><h2>Late Night Hero</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Man, I cannot thank you enough for that ride. Not many drivers would be so kind to do what you did."</p></div>
+            <div className="card"><img src={Conversation} alt='conversation' id='uberreview'></img><h2>Great Conversation</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Awesome conversation, even made a special pit stop for us! Highly recommend!"</p></div>
+            <div className="card"><img src={Navigation} alt='navigation' id='uberreview'></img><h2>Expert Navigation</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Good guy fun to chat with"</p></div>
+            <div className="card"><img src={Conversation} alt='conversation' id='uberreview'></img><h2>Great Conversation</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Thank you so much!"</p></div>
+            <div className="card"><img src={Service} alt='service' id='uberreview'></img><h2>Excellent Service</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>"Left our cellphone in his car and he promptly returned to us... awesome"</p></div>
+            <div className="card"><h2>All Star Driver</h2><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><img src={Star} alt='star' id='star'></img><p>Thank you today has been a long day and you being genuine was amazing !"</p></div>
+          </div><br /><br />
+        </section>
       </section>
-    </section>
     )
   }
 }

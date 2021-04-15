@@ -16,13 +16,27 @@ h1 {
   margin-top: 40px;
 }
 
-.paypallink {
+.venmocashapp {
+  text-align: center;
+}
+
+.venmo {
+  width: 350px;
+  margin: 25px auto;
+}
+
+.cashapp {
+  width: 350px;
+  margin: 25px auto 0 auto;
+}
+
+.paymentlink {
   border: 1px solid;
   border-radius: 20px;
   border-color: rgb(160, 160, 160);
   width: 400px;
   text-align: center;
-  margin: 150px auto;
+  margin: 75px auto 50px auto;
   box-shadow: 5px 5px 5px rgb(160, 160, 160);
 }
 
@@ -32,7 +46,7 @@ h1 {
   text-align: left;
 }
 
-.paypallink h2 {
+.paymentlink h2 {
   margin: 30px auto -32px 30px;
   text-align: left;
 }
@@ -49,4 +63,35 @@ h1 {
   font-weight: bold;
   margin-bottom: 25px;
   font-size: 20px;
+}
+
+@media all and (min-width: 0px) and (max-width: 800px) {
+  .donations h1 {
+    font-size: 18px;
+  }
+
+  .donations {
+    margin: 70px 50px 50px 50px;
+  }
+
+  .paymentlink {
+    width: 250px;
+    margin: 60px auto 25px auto;
+  }
+
+  .paypalimg {
+    width: 150px;
+    height: 37.5px;
+  }
+
+  .venmo {
+    width: 250px;
+    text-align: center;
+    margin: 65px auto 10px auto;
+  }
+
+  .cashapp {
+    width: 250px;
+    margin: -10px auto;
+  }
 }

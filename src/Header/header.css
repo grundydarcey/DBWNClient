@@ -23,12 +23,6 @@ hr {
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
-.hrnav, .exittrailing {
-  height: 1px;
-  border: 0px;
-  color: #000;
-}
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -39,14 +33,22 @@ hr {
   background-image: url('../Images/beachfront.jpg'); 
 }
 
+.linkholder {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .linkentries {
   padding-top: 1px;
   color: #000;
   font-family: Velez;
   flex-direction: column;
-  margin: 50px 30px;
+  margin: 25px 30px;
   font-weight: bold;
   font-size: 55px;
+  justify-content: space-evenly;
 }
 
 .linkentries a {
@@ -64,7 +66,7 @@ hr {
   right: 0;
   background-color: #e0bc83;
   position: fixed;
-  height: 100%;
+  height: 100vh;
 }
 
 .mask {
@@ -79,11 +81,7 @@ hr {
 
 .exit {
   text-align: left;
-  margin: 20px 0 20px 25px;
-}
-
-.exittrailing {
-  margin-top: 25px;
+  margin: 10px 0 10px 25px;
 }
 
 @media all and (min-width: 0px) and (max-width: 800px) {
@@ -98,13 +96,8 @@ hr {
     margin-top: -30px;
   }
 
-  .linkentries {
-    font-size: 35px;
-    margin: 100px 30px;
-  }
-
   .menutext {
-    width: 60%;
+    width: 30%;
     top: 0;
     right: 0;
     background-color: #e0bc83;
@@ -119,11 +112,26 @@ hr {
 
   .linkentries {
     font-size: 30px;
-    margin: 25px 15px;
+    margin: 10px 10px 15px 10px;
     text-align: right;
   }
+  
+  .linkholder {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+ 
+  .mask {
+    height: 100vh;
+    width: 100vh;
+    position: fixed;
+  }
+}
 
-  .hrnav {
-    margin: 10px auto;
+@media all and (min-width: 800px) and (max-width: 900px) {
+  .linkentries {
+    font-size: 33px;
   }
 }
