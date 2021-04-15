@@ -24,15 +24,18 @@ export default class Adult extends Component {
             Adult Nightlife
           </h1>
           <p className='nlintrotext'>If your night skews a bit off-kilter, these are some establishments around that may pique your interest. From gentlemen's clubs to a 24-hour adult shop, there are a few different recommendations below to make sure you really see all of Daytona.</p>
-          {AdultInfo.map(adult =>
-            <li key={adult.club_id} className='individual'>
-              <img src={adult.club_image} id='icon' alt='icon'></img>
-              <section className='liholder'>
-                <p className='individualheader'>{adult.club_name}</p>
-                <p className='contacttext'>Contact<br />
-                Address: {adult.address_building_number} {adult.address_street} {adult.city}, {adult.club_state} {adult.address_zipcode}</p>
-              </section>
-            </li>)}
+          <ul>
+            {AdultInfo.map(adult =>
+              <li key={adult.club_id} className='individual'>
+                <img src={adult.club_image} id='icon' alt='icon'></img>
+                <section className='liholder'>
+                  <p className='individualheader'>{adult.club_name}</p>
+                  <p className='contacttext'>Contact<br />
+                  Address: {adult.address_building_number} {adult.address_street} {adult.city}, {adult.club_state} {adult.address_zipcode}</p>
+                </section>
+              </li>
+            )}
+          </ul>
         </section>
       </section>
     )

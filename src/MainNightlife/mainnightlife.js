@@ -24,7 +24,7 @@ export default class MainNightlife extends Component {
             Nightlife on Main Street
           </h1>
           <p className='nlintrotext'>Main Street holds many Daytona Beach classics. Bikers come from all over the country to spend time in these bars and be around their people. These bars are a perfect spot to put your kickstand down and have a great time.</p>
-          
+          <ul>
             {MainSt.map(main =>
               <li key={main.club_id} className='individual'>
                 <img src={main.club_image} id='icon' alt='icon'></img>
@@ -36,7 +36,7 @@ export default class MainNightlife extends Component {
                 </section>
               </li>
             )}
-          
+          </ul>
         </section>
       </section>
     )
