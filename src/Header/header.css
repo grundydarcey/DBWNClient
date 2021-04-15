@@ -89,7 +89,7 @@ hr {
 @media all and (min-width: 0px) and (max-width: 800px) {
   .nav {
     font-size: 10px;
-    background-size: 100% 180%;
+    background-size: 125% 180%;
     background-position: 0px -30px;
     height: 150px;
   }
