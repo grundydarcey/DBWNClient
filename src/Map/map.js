@@ -45,7 +45,7 @@ function Map() {
           lat: club.lat,
           lng: club.lng
         }}
-        icon={"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
+        icon={"https://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
         onClick={() => {
           setSelectedVenue(club)
         }}
