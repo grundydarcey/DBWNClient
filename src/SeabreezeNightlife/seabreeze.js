@@ -23,21 +23,23 @@ export default class Seabreeze extends Component {
           <h1 className='nlintrotext'>
             Nightlife on Seabreeze
           </h1>
-          <p className='nlintrotext'>The Seabreeze area has many nightlife venues to boast. And you don't even have to be 21 to get into all of them! If you havent't celebrated your 21st yet, you can still head out and have a great time at Razzles or Club 509. This area also has a fun axe-throwing bar (Axe and Grog) as well as a car-themed brewery (Daytona Tap Room), and a classic Irish bar (Robbie O'Connell's). The possibilites are really endless on this strip.</p>
+          <p className='nlintrotext'>
+            The Seabreeze area has many nightlife venues to boast. And you don't even have to be 21 to get into all of them! If you havent't celebrated your 21st yet, you can still head out and have a great time at Razzles or Club 509. This area also has a fun axe-throwing bar (Axe and Grog) as well as a car-themed brewery (Daytona Tap Room), and a classic Irish bar (Robbie O'Connell's). The possibilites are really endless on this strip.
+          </p>
+          <ul>
+            {Seabreeze.map(sea =>
+              <li key={sea.club_id} className='individual'>
+                <img src={sea.club_image} id='icon' alt='icon'></img>
+                <section className='liholder'>
+                  <p className='individualheader'>{sea.club_name}</p>
+                  <p className='contacttext'>Contact<br />
+                    Address: {sea.address_building_number} {sea.address_street} {sea.city}, {sea.club_state} {sea.address_zipcode}
+                  </p>
+                </section>
+              </li>
+            )}
+          </ul>
         </section>
-        <ul>
-          {Seabreeze.map(sea =>
-            <li key={sea.club_id} className='individual'>
-              <img src={sea.club_image} id='icon' alt='icon'></img>
-              <section className='liholder'>
-                <p className='individualheader'>{sea.club_name}</p>
-                <p className='contacttext'>Contact<br />
-                  Address: {sea.address_building_number} {sea.address_street} {sea.city}, {sea.club_state} {sea.address_zipcode}
-                </p>
-              </section>
-            </li>
-          )}
-        </ul>
       </section>
     )
   }
