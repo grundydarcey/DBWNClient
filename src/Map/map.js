@@ -24,6 +24,7 @@ function Map() {
     <GoogleMap
       defaultZoom={11}
       defaultCenter={{ lat: 29.2301097, lng: -81.0116836 }}
+      resetBoundsOnResize={true}
     >
     {availableRest.map(rest => 
       <Marker 
@@ -78,7 +79,7 @@ const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export default function DBMap() {
   return (
-    <div style={{ width: '50vw', height: '50vh' }}>
+    <div className='wrappedmap' style={{ width: '80vw', height: '80vh' }}>
       <WrappedMap
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`} 
         loadingElement={<div style={{ height: '100%' }} />}
