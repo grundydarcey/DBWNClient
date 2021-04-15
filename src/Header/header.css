@@ -89,8 +89,13 @@ hr {
 @media all and (min-width: 0px) and (max-width: 800px) {
   .nav {
     font-size: 10px;
-    background-size: 100% 150%;
-    background-position: 0px -70px;
+    background-size: 100% 180%;
+    background-position: 0px -30px;
+    height: 150px;
+  }
+
+  hr {
+    margin-top: -30px;
   }
 
   .linkentries {
@@ -99,7 +104,7 @@ hr {
   }
 
   .menutext {
-    width: 70%;
+    width: 60%;
     top: 0;
     right: 0;
     background-color: #e0bc83;
@@ -108,6 +113,17 @@ hr {
   }
 
   .sitename h1 {
-    font-size: 15px;
+    font-size: 27px;
+    margin-top: 60px;
+  }
+
+  .linkentries {
+    font-size: 30px;
+    margin: 25px 15px;
+    text-align: right;
+  }
+
+  .hrnav {
+    margin: 10px auto;
   }
 }

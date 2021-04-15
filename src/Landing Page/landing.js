@@ -52,7 +52,7 @@ export default class Landing extends Component {
         </div>
         <br />
         <br />
-    </section>
+      </section>
     </section>
     )
   }

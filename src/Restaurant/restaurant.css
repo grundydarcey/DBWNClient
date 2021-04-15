@@ -6,13 +6,13 @@
 .individual {
   list-style-type: none;
   border-style: solid;
-  border-color: #a3c9a8;
+  border-color: rgb(160, 160, 160);
   border-radius: 20px;
   margin: 50px 150px;
   border-width: 2px;
   text-align: left;
   display: flex;
-  box-shadow: 5px 5px #84b59f;
+  box-shadow: 5px 5px rgb(160, 160, 160);
   background-color: white;
   justify-content: space-evenly;
 }
@@ -40,6 +40,7 @@
 
 .liholder {
   margin: 20px 30px 0 30px;
+
 }
 
 li:nth-child(odd) .liholder {
@@ -74,6 +75,9 @@ li:nth-child(even) .liholder {
 
 ul {
   margin-bottom: 150px;
+  margin-left: auto;
+  margin: auto auto 150px auto;
+  padding-left: 0;
 }
 
 .contacttext a {
@@ -83,27 +87,33 @@ ul {
 
 @media all and (min-width: 0) and (max-width: 800px) {
   .individual {
-    margin: 15px 5px;
+    margin: 15px 10px;
     justify-content: space-evenly;
+    align-items: center;
   }
 
   #icon {
     height: 99px;
     width: 150px;
-    margin: auto auto auto 10px;
+    margin: 10px 10px;
   }
 
   .intro {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .liholder {
     margin: 15px 5px 10px 5px;
+    font-size: 10px;
   }
 
   .restaurant h1 {
-    margin-left: 60px;
-    font-size: 15px;
+    margin-left: 50px;
+    font-size: 18px;
+  }
+
+  ul {
+    margin: auto auto 75px auto;
   }
 }

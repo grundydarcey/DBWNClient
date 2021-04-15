@@ -24,4 +24,12 @@
     text-align: justify;
     margin: 70px 30px 50px 30px;
   }
+
+  .nightlife h1 {
+    font-size: 18px;
+  }
+
+  .allnightlife {
+    margin-top: -45px;
+  }
 }

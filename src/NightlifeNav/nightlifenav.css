@@ -2,6 +2,7 @@
   background-color:#665744;
   background-image: linear-gradient(to top right, #332006,  #665744,);
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -17,4 +18,15 @@
 
 .nightlifenav a {
   text-decoration: none;
+}
+
+@media all and (min-width: 0px) and (max-width: 800px) {
+  .nightlifenav {
+    margin-top: 36px;
+    height: 40px;
+  }
+
+  .nightlifenav p {
+    font-size: 22px;
+  }
 }
