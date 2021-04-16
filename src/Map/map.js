@@ -20,7 +20,6 @@ function Map() {
   const context = useContext(ApiContext)
   const availableRest = context.restaurants;
   const availableClubs = context.nightlife;
-  console.log(`${process.env.REACT_APP_GOOGLE_KEY}`)
   return (
     <GoogleMap
       defaultZoom={11}
