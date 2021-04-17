@@ -63,7 +63,7 @@ export default function Header() {
           <FontAwesomeIcon
             icon={faBars}
             className='fontbars'
-            color='#fff'
+            color='#000'
             size='2x'
             onClick={() => setShowMenu(!showMenu)}
           />
